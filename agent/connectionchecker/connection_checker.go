@@ -147,7 +147,7 @@ func (cc *ConnectionChecker) checkMySQLConnection(ctx context.Context, dsn strin
 }
 
 func (cc *ConnectionChecker) checkMongoDBConnection(ctx context.Context, dsn string, files *agentpb.TextFiles, id uint32) *agentpb.CheckConnectionResponse {
-	const helloCommandVersion = "4.2.10"
+	const helloCommandVersion = "4.4.3"
 
 	var res agentpb.CheckConnectionResponse
 	var err error
